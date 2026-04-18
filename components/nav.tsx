@@ -39,18 +39,25 @@ export function Nav() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-cream/85 backdrop-blur-lg border-b border-border/60 py-3"
-            : "bg-transparent py-5",
+            ? "bg-cream/85 backdrop-blur-lg border-b border-border/60 py-2"
+            : "bg-transparent py-3",
         )}
       >
         <div className="container-page flex items-center justify-between gap-6">
           <Link href="/" aria-label={site.name} className="flex items-center shrink-0">
-            <span className="relative h-12 w-12 md:h-14 md:w-14">
+            <span
+              className={cn(
+                "relative block transition-all duration-500",
+                scrolled
+                  ? "h-14 w-14 md:h-16 md:w-16"
+                  : "h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28",
+              )}
+            >
               <Image
                 src="/images/logo.png"
                 alt={site.name}
                 fill
-                sizes="56px"
+                sizes="(max-width: 768px) 80px, 112px"
                 className="object-contain"
                 priority
               />

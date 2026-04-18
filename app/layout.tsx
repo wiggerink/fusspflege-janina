@@ -94,7 +94,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-cream">
         <Nav />
-        <main className="flex-1 pt-20 md:pt-24">{children}</main>
+        <main className="flex-1 pt-28 md:pt-32 lg:pt-36">{children}</main>
         <Footer />
         <WhatsappFloat />
       </body>
