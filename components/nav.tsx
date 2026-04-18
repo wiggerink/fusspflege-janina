@@ -44,24 +44,16 @@ export function Nav() {
         )}
       >
         <div className="container-page flex items-center justify-between gap-6">
-          <Link href="/" aria-label={site.name} className="flex items-center gap-2 shrink-0">
-            <span className="relative h-10 w-10 md:h-12 md:w-12">
+          <Link href="/" aria-label={site.name} className="flex items-center shrink-0">
+            <span className="relative h-12 w-12 md:h-14 md:w-14">
               <Image
                 src="/images/logo.png"
-                alt=""
+                alt={site.name}
                 fill
-                sizes="48px"
+                sizes="56px"
                 className="object-contain"
                 priority
               />
-            </span>
-            <span className="hidden sm:flex flex-col leading-tight">
-              <span className="font-serif text-xl md:text-2xl text-charcoal">
-                Janinas Fußpflege
-              </span>
-              <span className="text-[11px] uppercase tracking-[0.22em] text-sage-600">
-                Emlichheim
-              </span>
             </span>
           </Link>
 
