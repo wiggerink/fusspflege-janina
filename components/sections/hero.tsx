@@ -19,15 +19,15 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-cream/20 via-cream/50 to-cream" />
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/85 via-cream/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/30 via-cream/55 to-cream" />
+        <div className="absolute inset-0 bg-gradient-to-r from-cream/90 via-cream/45 to-transparent" />
         <div className="noise-overlay" />
       </div>
 
       <div className="absolute top-1/4 -right-20 -z-10 h-96 w-96 rounded-full bg-rose-200/40 blur-3xl" />
       <div className="absolute bottom-10 left-0 -z-10 h-72 w-72 rounded-full bg-sage-200/40 blur-3xl" />
 
-      <div className="container-page relative pt-10 pb-24 md:pt-16 md:pb-32 lg:pt-20 lg:pb-40">
+      <div className="container-page relative pt-32 pb-24 md:pt-40 md:pb-32 lg:pt-48 lg:pb-40">
         <div className="max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -136,7 +136,7 @@ export function Hero() {
                   Kosmetische Fußpflege
                 </div>
                 <div className="text-xs text-muted mt-0.5">
-                  ab 35 € · 60 Min. · komplette Wohltat
+                  ab 35 € · 45 Min. · komplette Wohltat
                 </div>
               </div>
             </div>

@@ -39,7 +39,7 @@ export function PageHero({
       <div className="absolute -top-20 -right-20 -z-10 h-96 w-96 rounded-full bg-rose-100/50 blur-3xl" />
       <div className="absolute -bottom-20 -left-20 -z-10 h-80 w-80 rounded-full bg-sage-100/60 blur-3xl" />
 
-      <div className="container-page pt-12 md:pt-20 pb-14 md:pb-20 relative">
+      <div className="container-page pt-32 md:pt-40 lg:pt-44 pb-14 md:pb-20 relative">
         <Reveal>
           <nav
             aria-label="Breadcrumb"

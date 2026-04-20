@@ -39,15 +39,22 @@ export function Nav() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-cream/85 backdrop-blur-lg border-b border-border/60 py-1"
-            : "bg-transparent py-1.5",
+            ? "bg-cream/70 backdrop-blur-xl border-b border-border/40 shadow-[0_4px_24px_-12px_rgba(30,23,20,0.15)] py-2"
+            : "bg-cream/10 backdrop-blur-md py-3",
         )}
       >
-        <div className="container-page flex items-center justify-between gap-6">
+        <div
+          aria-hidden
+          className={cn(
+            "pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cream/60 via-cream/20 to-transparent transition-opacity duration-500",
+            scrolled ? "opacity-0" : "opacity-100",
+          )}
+        />
+        <div className="container-page relative flex items-center justify-between gap-6">
           <Link href="/" aria-label={site.name} className="flex items-center shrink-0">
             <span
               className={cn(
-                "relative block transition-all duration-500",
+                "relative block transition-all duration-500 drop-shadow-[0_2px_8px_rgba(255,248,240,0.6)]",
                 scrolled
                   ? "h-14 w-14 md:h-16 md:w-16"
                   : "h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28",
@@ -64,7 +71,10 @@ export function Nav() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-10" aria-label="Hauptnavigation">
+          <nav
+            className="hidden lg:flex items-center gap-1 rounded-full bg-cream/50 backdrop-blur-md border border-border/50 px-3 py-1.5 shadow-soft"
+            aria-label="Hauptnavigation"
+          >
             {site.nav.map((item) => {
               const active = pathname === item.href;
               return (
@@ -72,31 +82,31 @@ export function Nav() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "relative text-lg font-medium tracking-wide transition-colors",
+                    "relative rounded-full px-5 py-2 text-[15px] font-medium tracking-wide transition-colors",
                     active
                       ? "text-charcoal"
-                      : "text-muted hover:text-charcoal",
+                      : "text-charcoal/65 hover:text-charcoal",
                   )}
                 >
-                  {item.label}
                   {active ? (
                     <motion.span
-                      layoutId="nav-underline"
-                      className="absolute -bottom-2 left-0 right-0 h-[2px] bg-rose-400"
+                      layoutId="nav-active-pill"
+                      className="absolute inset-0 rounded-full bg-white/85 shadow-[0_2px_8px_-2px_rgba(30,23,20,0.15)] ring-1 ring-rose-200/50"
                       transition={{ type: "spring", stiffness: 380, damping: 32 }}
                     />
                   ) : null}
+                  <span className="relative">{item.label}</span>
                 </Link>
               );
             })}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <Button
               href={`tel:${site.phone.replace(/\s/g, "")}`}
               variant="primary"
               size="sm"
-              className="hidden md:inline-flex"
+              className="hidden md:inline-flex shadow-soft"
             >
               <Phone />
               Termin
@@ -106,7 +116,7 @@ export function Nav() {
               aria-label="Menü öffnen"
               aria-expanded={open}
               onClick={() => setOpen(true)}
-              className="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/80 bg-cream text-charcoal hover:bg-cream-dark transition"
+              className="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/60 bg-cream/80 backdrop-blur text-charcoal hover:bg-cream transition shadow-soft"
             >
               <Menu className="h-5 w-5" />
             </button>
