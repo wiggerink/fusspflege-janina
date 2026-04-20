@@ -86,13 +86,25 @@ export function Footer() {
       <div className="border-t border-cream/10">
         <div className="container-page py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-cream/55">
           <p>© {year} Janinas Fußpflege · {site.owner}</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <Link href="/impressum" className="hover:text-rose-300 transition">
               Impressum
             </Link>
             <Link href="/datenschutz" className="hover:text-rose-300 transition">
               Datenschutz
             </Link>
+            <span aria-hidden className="hidden md:inline text-cream/25">·</span>
+            <span>
+              Erstellt von{" "}
+              <a
+                href="https://www.web-n-search.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-rose-300 transition underline underline-offset-2 decoration-cream/30"
+              >
+                Web &amp; Search
+              </a>
+            </span>
           </div>
         </div>
       </div>
