@@ -8,7 +8,7 @@ export const site = {
   phone: "+49 174 4110098",
   phoneDisplay: "0174 / 41 10 098",
   whatsapp: "491744110098",
-  email: "kontakt@fusspflege-janina.de",
+  email: "info@fusspflege-janina.de",
   address: {
     street: "Anne-Frank-Str. 5",
     zip: "49824",
@@ -91,7 +91,7 @@ export const services: Service[] = [
     ],
     price: "ab 5 € Aufpreis",
     duration: "ca. 15 Minuten zusätzlich",
-    image: "/images/spa-detail-3.jpg",
+    image: "/images/nagellack.jpg",
   },
   {
     slug: "eingewachsene-naegel",
