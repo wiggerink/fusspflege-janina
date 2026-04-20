@@ -118,9 +118,7 @@ export default function KontaktPage() {
                         Öffnungszeiten
                       </div>
                       <p className="text-charcoal text-sm">
-                        Di – Fr: 09 – 18 Uhr
-                        <br />
-                        Sa: Nach Vereinbarung
+                        {site.hoursNote}
                       </p>
                     </div>
                   </li>

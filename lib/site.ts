@@ -19,19 +19,7 @@ export const site = {
     lat: 52.6109,
     lng: 6.8472,
   },
-  hours: [
-    { day: "Montag", time: "Geschlossen" },
-    { day: "Dienstag", time: "09:00 – 18:00" },
-    { day: "Mittwoch", time: "09:00 – 18:00" },
-    { day: "Donnerstag", time: "09:00 – 18:00" },
-    { day: "Freitag", time: "09:00 – 18:00" },
-    { day: "Samstag", time: "Nach Vereinbarung" },
-    { day: "Sonntag", time: "Geschlossen" },
-  ],
-  openingHoursSchema: [
-    "Tu-Fr 09:00-18:00",
-    "Sa 10:00-14:00",
-  ],
+  hoursNote: "Termine nach Vereinbarung",
   social: {
     instagram: "https://www.instagram.com/",
     facebook: "https://www.facebook.com/",

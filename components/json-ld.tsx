@@ -26,20 +26,6 @@ export function LocalBusinessSchema() {
       latitude: site.address.lat,
       longitude: site.address.lng,
     },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "10:00",
-        closes: "14:00",
-      },
-    ],
     areaServed: [
       { "@type": "City", name: "Emlichheim" },
       { "@type": "City", name: "Nordhorn" },

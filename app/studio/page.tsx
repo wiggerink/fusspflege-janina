@@ -81,19 +81,10 @@ export default function StudioPage() {
                 </div>
                 <div>
                   <h3 className="font-serif text-lg mb-1">Öffnungszeiten</h3>
-                  <ul className="text-charcoal-soft space-y-0.5 text-sm">
-                    {site.hours.map((h) => (
-                      <li
-                        key={h.day}
-                        className="flex justify-between gap-8 max-w-[14rem]"
-                      >
-                        <span>{h.day}</span>
-                        <span className="text-charcoal">{h.time}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-charcoal">{site.hoursNote}</p>
                   <p className="text-xs text-muted mt-2">
-                    Behandlungen nur nach Terminvereinbarung.
+                    Vereinbaren Sie Ihren Termin telefonisch, per WhatsApp oder über
+                    das Kontaktformular.
                   </p>
                 </div>
               </div>

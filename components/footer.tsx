@@ -115,11 +115,7 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Clock className="h-5 w-5 shrink-0 text-rose-300" />
-              <span>
-                Di – Fr: 09 – 18 Uhr
-                <br />
-                Sa: Nach Vereinbarung
-              </span>
+              <span>{site.hoursNote}</span>
             </li>
           </ul>
         </div>
