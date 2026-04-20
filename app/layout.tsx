@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "Janina Wiggerink",
     "Fußpflege Nordhorn",
     "Fußpflege Uelsen",
-    "Fußmassage",
+    "Nagelpflege Emlichheim",
   ],
   authors: [{ name: site.owner }],
   creator: site.owner,
@@ -94,7 +94,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-cream">
         <Nav />
-        <main className="flex-1 pt-32 md:pt-40 lg:pt-48">{children}</main>
+        <main className="flex-1 pt-24 md:pt-28 lg:pt-32">{children}</main>
         <Footer />
         <WhatsappFloat />
       </body>

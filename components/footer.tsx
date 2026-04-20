@@ -1,24 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-
-function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
-    </svg>
-  );
-}
-
-function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
-      <path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.75c0-.93.26-1.56 1.6-1.56h1.7V3.33c-.3-.04-1.31-.13-2.49-.13-2.47 0-4.16 1.5-4.16 4.27V9.8H7.5V13h2.65v8h3.35Z" />
-    </svg>
-  );
-}
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -44,26 +26,6 @@ export function Footer() {
             Grafschaft Bentheim. Mit Liebe zum Detail, hochwertigen Produkten und
             viel Zeit für Sie.
           </p>
-          <div className="flex gap-3 mt-8">
-            <a
-              href={site.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-cream/10 hover:bg-rose-400 hover:text-white transition"
-            >
-              <InstagramIcon className="h-5 w-5" />
-            </a>
-            <a
-              href={site.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-cream/10 hover:bg-rose-400 hover:text-white transition"
-            >
-              <FacebookIcon className="h-5 w-5" />
-            </a>
-          </div>
         </div>
 
         <div>

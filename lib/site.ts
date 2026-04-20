@@ -20,10 +20,6 @@ export const site = {
     lng: 6.8472,
   },
   hoursNote: "Termine nach Vereinbarung",
-  social: {
-    instagram: "https://www.instagram.com/",
-    facebook: "https://www.facebook.com/",
-  },
   nav: [
     { label: "Start", href: "/" },
     { label: "Über mich", href: "/ueber-mich" },
@@ -57,7 +53,7 @@ export const services: Service[] = [
       "Sanfte, präzise Nagelpflege & Kürzung",
       "Professionelle Hornhautentfernung",
       "Pflege und Bearbeitung der Nagelhaut",
-      "Finale Fußmassage mit hochwertiger Pflegecreme",
+      "Abschließendes Eincremen mit hochwertiger Pflegecreme",
     ],
     price: "ab 35 €",
     duration: "ca. 45 Minuten",

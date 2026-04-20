@@ -53,7 +53,7 @@ export function AboutTeaser() {
               </p>
               <p>
                 Ob klassische kosmetische Fußpflege, sanfte Hornhautentfernung
-                oder eine wohltuende Fußmassage: Bei mir dürfen Sie einfach
+                oder liebevolle Nagelpflege: Bei mir dürfen Sie einfach
                 ankommen und sich fallen lassen.
               </p>
             </div>

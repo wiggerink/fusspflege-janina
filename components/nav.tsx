@@ -39,8 +39,8 @@ export function Nav() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-cream/85 backdrop-blur-lg border-b border-border/60 py-2"
-            : "bg-transparent py-3",
+            ? "bg-cream/85 backdrop-blur-lg border-b border-border/60 py-1"
+            : "bg-transparent py-1.5",
         )}
       >
         <div className="container-page flex items-center justify-between gap-6">
@@ -49,15 +49,15 @@ export function Nav() {
               className={cn(
                 "relative block transition-all duration-500",
                 scrolled
-                  ? "h-16 w-16 md:h-20 md:w-20"
-                  : "h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40",
+                  ? "h-14 w-14 md:h-16 md:w-16"
+                  : "h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28",
               )}
             >
               <Image
                 src="/images/logo.png"
                 alt={site.name}
                 fill
-                sizes="(max-width: 768px) 128px, 160px"
+                sizes="(max-width: 768px) 96px, 112px"
                 className="object-contain"
                 priority
               />
@@ -72,7 +72,7 @@ export function Nav() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "relative text-sm font-medium tracking-wide transition-colors",
+                    "relative text-lg font-medium tracking-wide transition-colors",
                     active
                       ? "text-charcoal"
                       : "text-muted hover:text-charcoal",

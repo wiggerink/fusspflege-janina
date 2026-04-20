@@ -116,9 +116,9 @@ export default function UeberMichPage() {
                   Bedürfnisse an. Denn gute Fußpflege ist nie von der Stange.
                 </p>
                 <p>
-                  Neben der klassischen kosmetischen Fußpflege liebe ich es
-                  besonders, Fußmassagen zu geben. Sie verbinden Pflege mit
-                  echter Entspannung – ein kleiner Kurzurlaub mitten im Alltag.
+                  Am Ende jeder Behandlung verwöhne ich Ihre Füße zusätzlich mit
+                  einer sanften Pflegemassage – der perfekte Abschluss, der Pflege
+                  mit echter Entspannung verbindet.
                 </p>
                 <p className="font-serif text-2xl text-rose-600 italic pt-4">
                   Ich freue mich darauf, Sie kennenzulernen.
