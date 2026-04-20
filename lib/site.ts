@@ -74,7 +74,7 @@ export const services: Service[] = [
     ],
     price: "Aufpreis nach Aufwand",
     duration: "Zusatzleistung",
-    image: "/images/spa-detail-1.jpg",
+    image: "/images/huehneraugen-behandlung.webp",
   },
   {
     slug: "nagellack",
