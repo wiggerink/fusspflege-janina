@@ -129,28 +129,28 @@ export const services: Service[] = [
 
 export const testimonials = [
   {
-    name: "Anna K.",
+    name: "Hanna",
     location: "Emlichheim",
     rating: 5,
-    text: "Ich bin absolut begeistert! Janina nimmt sich so viel Zeit, ihre Art ist herzlich und professionell zugleich. Meine Füße fühlen sich wie neu an – ich komme ganz sicher wieder.",
+    text: "Sehr kompetent, freundlich, ich bin mit dem Ergebnis immer sehr zufrieden.",
   },
   {
-    name: "Marlies H.",
-    location: "Nordhorn",
+    name: "Peggy T.",
+    location: "",
     rating: 5,
-    text: "Eine absolute Wohltat. Das Studio ist wunderschön, sauber und die Atmosphäre so entspannend. Bestpreis-Leistung in der ganzen Grafschaft.",
+    text: "Ich habe mich sehr wohlgefühlt, super saubere Arbeit.",
   },
   {
-    name: "Bernd T.",
-    location: "Coevorden",
+    name: "Tanja",
+    location: "Emlichheim",
     rating: 5,
-    text: "Als Mann war ich lange skeptisch – bei Janina habe ich mich ab der ersten Minute gut aufgehoben gefühlt. Klare Empfehlung, auch für die Herren!",
+    text: "Sehr freundliche und kompetente Person, freue mich auf den nächsten Termin.",
   },
   {
-    name: "Silvia M.",
-    location: "Uelsen",
+    name: "Evelyn T.",
+    location: "Emlichheim",
     rating: 5,
-    text: "Kompetent, einfühlsam und mit Liebe zum Detail. Nach der Behandlung fühlen sich meine Füße jedes Mal an wie frisch geboren. Danke, Janina!",
+    text: "Nette Dame! Toller Service. Super gerne wieder.",
   },
 ];
 

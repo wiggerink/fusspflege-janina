@@ -54,9 +54,11 @@ export function Testimonials() {
                   <cite className="not-italic font-medium text-charcoal block">
                     {t.name}
                   </cite>
-                  <span className="text-xs text-muted uppercase tracking-wider">
-                    aus {t.location}
-                  </span>
+                  {t.location ? (
+                    <span className="text-xs text-muted uppercase tracking-wider">
+                      aus {t.location}
+                    </span>
+                  ) : null}
                 </div>
               </footer>
             </motion.blockquote>
