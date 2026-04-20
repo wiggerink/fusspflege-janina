@@ -72,7 +72,7 @@ export const services: Service[] = [
       "Finale Fußmassage mit hochwertiger Pflegecreme",
     ],
     price: "ab 35 €",
-    duration: "ca. 60 Minuten",
+    duration: "ca. 45 Minuten",
     image: "/images/hornhautbehandlung.jpg",
     featured: true,
   },
@@ -105,7 +105,7 @@ export const services: Service[] = [
       "Farbauftrag in Ihrer Wunschfarbe",
       "Schützender Top Coat",
     ],
-    price: "ab 8 € Aufpreis",
+    price: "ab 5 € Aufpreis",
     duration: "ca. 15 Minuten zusätzlich",
     image: "/images/spa-detail-3.jpg",
   },
@@ -124,22 +124,6 @@ export const services: Service[] = [
     price: "Aufpreis nach Aufwand",
     duration: "Zusatzleistung",
     image: "/images/mobile-fusspflege.jpg",
-  },
-  {
-    slug: "fussmassage",
-    title: "Fußmassage Deluxe",
-    tagline: "Reine Entspannung pur",
-    description:
-      "Verlängerte Fußmassage mit hochwertigen, duftenden Pflegeprodukten. Der perfekte Abschluss einer Fußpflege oder als wohltuende Auszeit zwischendurch.",
-    includes: [
-      "Warme Pflegeöle oder Cremes",
-      "Gezielte Griffe für die Reflexzonen",
-      "Entspannung für Fuß und Wade",
-      "Ein Moment nur für Sie",
-    ],
-    price: "ab 15 €",
-    duration: "ca. 20 Minuten",
-    image: "/images/massage-2.jpg",
   },
   {
     slug: "gutschein",
@@ -193,7 +177,7 @@ export const faqs = [
   },
   {
     q: "Wie lange dauert eine Behandlung?",
-    a: "Eine vollständige kosmetische Fußpflege dauert bei mir etwa 60 Minuten. Ich nehme mir bewusst Zeit – gute Fußpflege lässt sich nicht durch die Uhr hetzen.",
+    a: "Eine vollständige kosmetische Fußpflege dauert bei mir etwa 45 Minuten. Ich nehme mir bewusst Zeit – gute Fußpflege lässt sich nicht durch die Uhr hetzen.",
   },
   {
     q: "Welche Produkte verwenden Sie?",

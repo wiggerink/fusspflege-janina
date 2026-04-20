@@ -28,22 +28,16 @@ export function Footer() {
       <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-rose-400/60 to-transparent" />
       <div className="container-page py-20 lg:py-24 grid gap-14 lg:grid-cols-4 lg:gap-10">
         <div className="lg:col-span-2 max-w-md">
-          <Link href="/" className="inline-flex items-center gap-3 mb-6">
-            <span className="relative h-14 w-14">
+          <Link href="/" aria-label={site.name} className="inline-flex items-center mb-6">
+            <span className="relative h-28 w-28 md:h-32 md:w-32">
               <Image
                 src="/images/logo.png"
-                alt=""
+                alt={site.name}
                 fill
-                sizes="56px"
+                sizes="128px"
                 className="object-contain invert-[0.02]"
               />
             </span>
-            <div>
-              <div className="font-serif text-2xl">Janinas Fußpflege</div>
-              <div className="text-[11px] uppercase tracking-[0.22em] text-rose-300">
-                Emlichheim
-              </div>
-            </div>
           </Link>
           <p className="text-cream/75 leading-relaxed">
             Ihr Rückzugsort für zertifizierte kosmetische Fußpflege mitten in der

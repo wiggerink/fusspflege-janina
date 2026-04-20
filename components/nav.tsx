@@ -49,15 +49,15 @@ export function Nav() {
               className={cn(
                 "relative block transition-all duration-500",
                 scrolled
-                  ? "h-14 w-14 md:h-16 md:w-16"
-                  : "h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28",
+                  ? "h-16 w-16 md:h-20 md:w-20"
+                  : "h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40",
               )}
             >
               <Image
                 src="/images/logo.png"
                 alt={site.name}
                 fill
-                sizes="(max-width: 768px) 80px, 112px"
+                sizes="(max-width: 768px) 128px, 160px"
                 className="object-contain"
                 priority
               />

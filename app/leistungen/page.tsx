@@ -11,7 +11,7 @@ import { services, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Leistungen & Preise – Kosmetische Fußpflege in Emlichheim",
   description:
-    "Alle Fußpflege-Behandlungen im Überblick: kosmetische Fußpflege ab 35 €, Hornhautentfernung, Hühneraugen-Behandlung, Fußmassage und mehr. Transparente Preise, zertifizierte Qualität.",
+    "Alle Fußpflege-Behandlungen im Überblick: kosmetische Fußpflege ab 35 €, Hornhautentfernung, Hühneraugen-Behandlung, Nagellack & Feinschliff und mehr. Transparente Preise, zertifizierte Qualität.",
   alternates: { canonical: `${site.url}/leistungen` },
 };
 
@@ -142,9 +142,11 @@ export default function LeistungenPage() {
             <div className="prose-spa space-y-4">
               <p>
                 Alle Behandlungen finden <strong>ausschließlich nach Terminvereinbarung</strong>{" "}
-                statt. Bitte denken Sie daran, nicht rechtzeitig absagbare Termine
-                können mit 50 % in Rechnung gestellt werden – so habe ich die
-                Möglichkeit, den Platz anderweitig anzubieten.
+                statt. Sollten Sie einen Termin nicht wahrnehmen können, bitte ich Sie,
+                diesen <strong>unbedingt rechtzeitig abzusagen</strong> – telefonisch,
+                per WhatsApp oder E-Mail. So kann ich den freien Platz anderweitig
+                vergeben und auch anderen Kundinnen und Kunden einen Termin ermöglichen.
+                Vielen Dank für Ihr Verständnis.
               </p>
               <p>
                 Sie haben ein besonderes Anliegen oder eine Frage vorab? Rufen
