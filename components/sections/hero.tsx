@@ -111,7 +111,7 @@ export function Hero() {
           initial={{ opacity: 0, x: 40, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden lg:block absolute right-0 top-10 w-[360px] xl:w-[440px] aspect-[3/4] rounded-[36px] overflow-hidden shadow-elevated"
+          className="hidden lg:block absolute right-0 top-40 xl:top-48 w-[360px] xl:w-[440px] aspect-[3/4] rounded-[36px] overflow-hidden shadow-elevated"
         >
           <Image
             src="/images/studio.jpg"
