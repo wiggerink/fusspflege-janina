@@ -15,7 +15,8 @@ export function AboutTeaser() {
               src="/images/janina-portrait.jpg"
               alt="Janina Wiggerink, Inhaberin und zertifizierte Fußpflegerin"
               fill
-              sizes="(max-width: 1024px) 90vw, 40vw"
+              sizes="(min-width: 1024px) 35vw, (min-width: 448px) 28rem, 90vw"
+              quality={75}
               className="object-cover"
             />
           </div>
