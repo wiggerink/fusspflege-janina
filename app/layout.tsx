@@ -10,20 +10,23 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["500", "600"],
   display: "swap",
+  preload: true,
 });
 
 const dancing = Dancing_Script({
   variable: "--font-dancing",
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["600"],
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

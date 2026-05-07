@@ -140,8 +140,8 @@ export default function UeberMichPage() {
             </h2>
           </Reveal>
           <Stagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {values.map((v) => (
-              <StaggerItem key={v.title}>
+            {values.map((v, i) => (
+              <StaggerItem key={v.title} index={i}>
                 <div className="h-full p-8 rounded-3xl bg-cream border border-border/60 hover:shadow-soft hover:-translate-y-0.5 transition">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100 text-rose-600 mb-5">
                     <v.icon className="h-6 w-6" />

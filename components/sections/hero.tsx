@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight, Phone, Sparkles, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
@@ -82,11 +79,9 @@ export function Hero() {
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 40, scale: 0.95 }}
-          animate={{ opacity: 1, x: 0, scale: 1 }}
-          transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden lg:block absolute right-0 top-40 xl:top-48 w-[360px] xl:w-[440px] aspect-[3/4] rounded-[36px] overflow-hidden shadow-elevated"
+        <div
+          className="float-in hidden lg:block absolute right-0 top-40 xl:top-48 w-[360px] xl:w-[440px] aspect-[3/4] rounded-[36px] overflow-hidden shadow-elevated"
+          style={{ "--reveal-delay": "400ms" } as React.CSSProperties}
         >
           <Image
             src="/images/studio.jpg"
@@ -96,11 +91,9 @@ export function Hero() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent" />
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="absolute bottom-6 left-6 right-6 rounded-2xl bg-cream/95 backdrop-blur-sm p-5 shadow-card"
+          <div
+            className="reveal absolute bottom-6 left-6 right-6 rounded-2xl bg-cream/95 backdrop-blur-sm p-5 shadow-card"
+            style={{ "--reveal-delay": "1000ms" } as React.CSSProperties}
           >
             <div className="flex items-center gap-3">
               <div className="h-11 w-11 rounded-full bg-sage-400 text-cream inline-flex items-center justify-center">
@@ -115,8 +108,8 @@ export function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

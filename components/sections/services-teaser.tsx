@@ -29,8 +29,8 @@ export function ServicesTeaser() {
         </div>
 
         <Stagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {featured.map((s) => (
-            <StaggerItem key={s.slug}>
+          {featured.map((s, i) => (
+            <StaggerItem key={s.slug} index={i}>
               <Link
                 href={`/leistungen#${s.slug}`}
                 className="group block relative h-full overflow-hidden rounded-3xl bg-cream-dark/50 hover:bg-cream-dark transition shadow-soft hover:shadow-card"

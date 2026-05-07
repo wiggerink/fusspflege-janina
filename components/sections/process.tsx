@@ -43,7 +43,7 @@ export function Process() {
 
         <Stagger className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {steps.map((step, i) => (
-            <StaggerItem key={step.title}>
+            <StaggerItem key={step.title} index={i}>
               <div className="relative h-full p-8 rounded-3xl bg-cream border border-border/60 hover:shadow-soft transition">
                 <div className="absolute -top-5 left-8 inline-flex items-center justify-center h-11 w-11 rounded-full bg-rose-400 text-cream font-serif text-lg shadow-soft">
                   {i + 1}
