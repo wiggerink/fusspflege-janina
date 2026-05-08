@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight, Quote } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
@@ -8,28 +7,18 @@ export function AboutTeaser() {
     <section className="relative py-24 md:py-32 bg-ivory overflow-hidden">
       <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-rose-100/60 blur-3xl" />
       <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-sage-100/80 blur-3xl" />
-      <div className="container-page relative grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-        <Reveal className="lg:col-span-5 relative">
-          <div className="relative aspect-[4/5] max-w-md mx-auto lg:max-w-none rounded-[32px] overflow-hidden shadow-elevated">
-            <Image
-              src="/images/janina-portrait.jpg"
-              alt="Janina Wiggerink, Inhaberin und zertifizierte Fußpflegerin"
-              fill
-              sizes="(min-width: 1024px) 35vw, (min-width: 448px) 28rem, 90vw"
-              quality={75}
-              className="object-cover"
-            />
-          </div>
-          <div className="hidden md:flex absolute -bottom-6 -right-4 lg:-right-10 items-center gap-3 rounded-2xl bg-cream px-5 py-4 shadow-card max-w-xs">
+      <div className="container-page relative max-w-3xl mx-auto text-center">
+        <Reveal>
+          <div className="inline-flex items-center gap-3 rounded-2xl bg-cream px-5 py-4 shadow-card max-w-md mx-auto mb-10">
             <Quote className="h-7 w-7 text-rose-400 shrink-0" />
-            <p className="text-sm italic text-charcoal/80 leading-snug">
+            <p className="text-sm italic text-charcoal/80 leading-snug text-left">
               &bdquo;Ihre Füße tragen Sie durchs Leben – sie verdienen das
               Beste.&ldquo;
             </p>
           </div>
         </Reveal>
 
-        <div className="lg:col-span-7 max-w-2xl">
+        <div className="text-left max-w-2xl mx-auto">
           <Reveal>
             <p className="eyebrow mb-5">Über mich</p>
             <h2 className="text-charcoal mb-7">

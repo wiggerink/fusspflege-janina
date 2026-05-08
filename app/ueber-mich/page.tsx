@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Award, Heart, Leaf, ShieldCheck, Sparkles, Users } from "lucide-react";
 import { PageHero } from "@/components/ui/page-hero";
 import { Reveal, Stagger, StaggerItem } from "@/components/ui/reveal";
@@ -70,20 +69,8 @@ export default function UeberMichPage() {
       />
 
       <section className="py-16 md:py-24">
-        <div className="container-page grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          <Reveal className="lg:col-span-5">
-            <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden shadow-elevated">
-              <Image
-                src="/images/janina-portrait.jpg"
-                alt="Janina Wiggerink, Inhaberin von Janinas Fußpflege"
-                fill
-                sizes="(max-width: 1024px) 90vw, 40vw"
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
-
-          <div className="lg:col-span-7">
+        <div className="container-page max-w-3xl mx-auto">
+          <div>
             <Reveal>
               <p className="eyebrow mb-5">Meine Geschichte</p>
               <h2 className="text-charcoal mb-8">
